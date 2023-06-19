@@ -42,6 +42,11 @@ header {
   align-items: center;
 }
 
+.logo_container a {
+  color: #6f6864;
+  text-decoration: none;
+}
+
 .logo {
   font-size: 2.25rem;
   font-family: "Monoton";
@@ -77,7 +82,7 @@ main {
 
 .content_container {
   position: absolute;
-  top: 150px;
+  top: 100px;
   left: 216px;
   display: flex;
 }
@@ -90,14 +95,27 @@ main {
   color: #f1f1f1;
 }
 
-.text_container p {
-  margin-top: 4rem;
+.shop_all a {
   font-family: "Ubuntu_Regular";
   color: #b0805d;
+  text-decoration: none;
+}
+
+.shop_all {
+  align-items: center;
+  column-gap: 10px;
+  margin-top: 4rem;
+  display: flex;
+}
+
+.orange_bar {
+  width: 40px;
+  height: 2px;
+  background-color: #b0805d;
 }
 
 .picture_container {
-  height: 580px;
+  height: 500px;
   position: relative;
   /* overflow: hidden; */
   margin-left: 71px;
@@ -111,10 +129,10 @@ main {
   display: block;
   object-fit: cover;
   object-position: center;
-  height: 580px;
+  height: 500px;
 }
 
-.buttons {
+/* .buttons_container {
   position: absolute;
   bottom: -50px;
   right: 0;
@@ -122,12 +140,64 @@ main {
   display: flex;
   width: 100px;
   justify-content: space-between;
+  align-items: center;
 }
 
-.buttons p {
-  padding: 10px;
+.button {
+  height: 15px;
+  width: 15px;
   border: 1px solid #b0805d;
   border-radius: 100%;
+  background-color: red;
+  line-height: 0.546;
+  position: relative;
+}
+
+.button p {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+.buttons_container {
+  position: absolute;
+  display: flex;
+  width: 100px;
+  justify-content: space-between;
+  bottom: -72px;
+  right: 50px;
+}
+
+.button {
+  position: relative;
+  color: #6f6864;
+  border: 1px solid #6f6864;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.button:hover {
+  color: #b0805d;
+  border: 1px solid #b0805d;
+}
+
+.button p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+footer {
+  position: absolute;
+  bottom: 20px;
+  left: 80px;
+}
+
+.socialmedia_container {
+  display: flex;
+  column-gap: 30px;
 }
 
 footer img {
@@ -135,9 +205,4 @@ footer img {
   object-fit: cover;
   object-position: center;
   /* fill: #f1f1f1; */
-}
-
-footer {
-  position: absolute;
-  bottom: 0;
 }
